@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.container {
+  width: 100% !important;
+}
+
+.nav-link {
+  color: purple !important;
+}
+
+.active {
+  background-color: black !important;
+  color: white !important;
+}
+
+.fs-4 {
+  color: purple !important;
+}
+
+/* CONTENT START */
+
+main {
+  display: inline-block;
+  width: 45%;
+}
+aside {
+  display: inline-block;
+  width: 45%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.accordion {
+  display: inline-table !important;
+  float: left;
+  /* margin: auto auto !important; */
+  width: 100%;
+  /* margin-left: 10% !important; */
+}
+.accordion2 {
+  display: inline-table !important;
+  float: right;
+  /* margin: auto auto !important; */
+  width: 100%;
+}
+.accordion-header {
+  text-align: center !important;
+}
+
+.accordion-button {
+  text-align: center !important;
+}
+
+#dvinfo_container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  width: 100%;
+}
+
+.dvinfo {
+  width: 35%;
+}
+
+/* CONTENT END */
+
+footer {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0 !important;
+  background-color: purple !important;
+  color: white;
+}
+
+#footer_quicklinks {
+  text-align: center;
+}
+
+.nav-link_footer {
+  color: white !important;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+#footer_bottom {
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.py-5 {
+  margin-top: 100px;
+  margin-right: 0px !important;
+  padding: 0px !important;
+  bottom: 0px !important;
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  main {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    text-align: center;
+  }
+  aside {
+    /* display: none; */
+    width: 100%;
+  }
+  .wrapper {
+    text-align: center !important;
+    display: block;
+    width: 100% !important;
+  }
+  .accordion {
+    text-align: center !important;
+    align-items: center;
+  }
+  #chartDiv {
+    display: none;
+  }
+  #dvinfo_container {
+    display: block;
+  }
+  .dvinfo {
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+  }
+  .dvinfo:hover {
+    transform: scale(150%);
+    transition: 600ms ease-in-out;
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* // XX-Large devices (larger desktops) */
+/* // No media query since the xxl breakpoint has no upper bound on its width */

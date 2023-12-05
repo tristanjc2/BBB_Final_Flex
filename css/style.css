@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100% !important;
+}
+
+.nav-link {
+  color: purple !important;
+}
+
+.active {
+  background-color: black !important;
+  color: white !important;
+}
+
+.fs-4 {
+  color: purple !important;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/* CONTENT START */
+.carousel {
+  max-width: 75% !important;
+  margin: auto auto !important;
+}
+.bottom_content {
+  /* visibility: hidden; */
+  text-align: center;
+  margin-top: 50px;
+}
+/* CONTENT END */
+
+footer {
+  position: relative;
+  width: 100%;
+  padding: 0 !important;
+  background-color: purple !important;
+  color: white;
+}
+
+#footer_quicklinks {
+  text-align: center;
+}
+
+.nav-link_footer {
+  color: white !important;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+#footer_bottom {
+  justify-content: space-evenly !important;
+  align-items: center !important;
+}
+
+.py-5 {
+  bottom: 0;
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* .bottom_content {
+    visibility: visible;
+  } */
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .carousel {
+    max-width: none !important ;
+    margin-left: 0 !important;
+  }
+}
+
+/* // XX-Large devices (larger desktops) */
+/* // No media query since the xxl breakpoint has no upper bound on its width */

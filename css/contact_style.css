@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100% !important;
+}
+
+.nav-link {
+  color: purple !important;
+}
+
+.active {
+  background-color: black !important;
+  color: white !important;
+}
+
+.fs-4 {
+  color: purple !important;
+}
+
+/* CONTENT START */
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.card {
+  background-image: url(../imgs/water_unsplash.jpg);
+  background-size: cover;
+  height: 800px;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 50% !important;
+  margin: auto auto;
+  margin-bottom: 50px;
+}
+
+.card background-image {
+  width: 60%;
+}
+
+#supportlink {
+  color: white;
+}
+
+.card-title:hover {
+  color: blue;
+}
+
+.card-title:active {
+  color: red;
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.page-section {
+  margin-bottom: 50px;
+}
+
+.form-group {
+  margin: 15px;
+}
+
+#contactForm {
+  display: none;
+}
+/* CONTENT END */
+
+footer {
+  position: relative;
+  width: 100%;
+  padding: 0 !important;
+  background-color: purple !important;
+  color: white;
+}
+
+#footer_quicklinks {
+  text-align: center;
+}
+
+.nav-link_footer {
+  color: white !important;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+#footer_bottom {
+  justify-content: space-evenly !important;
+  align-items: center !important;
+}
+
+.py-5 {
+  bottom: 0;
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .card {
+    height: 75vh;
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .card {
+    width: 100% !important;
+    margin-left: 0 !important;
+    object-fit: cover;
+  }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  /* .card {
+    width: 100% !important;
+    margin-left:0 !important;
+  } */
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* // XX-Large devices (larger desktops) */
+/* // No media query since the xxl breakpoint has no upper bound on its width */

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People helping people</title>
+
+    <!-- BOOTSTRAP CDN -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- BOOTSTRAP JS -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- LEAFLET -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- CSS  -->
+
+    <link rel="stylesheet" href="css/about_style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER START -->
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="#"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <img
+            id="dv_logo"
+            src="imgs/purple_heart.png"
+            alt=""
+            class="bi me-2"
+            width="75px"
+            height="50px"
+          />
+          <span class="fs-4">People helping people</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="faqs.html" class="nav-link">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item active">
+            <a
+              href="about.html"
+              class="nav-link"
+              style="color: white !important"
+              >About</a
+            >
+          </li>
+        </ul>
+      </header>
+    </div>
+
+    <!-- HEADER END -->
+
+    <!-- NAV START -->
+
+    <!-- NAV END -->
+
+    <!-- CONTENT START -->
+
+    <main>
+      <!-- <div style="width: 100%; text-align: center; margin-bottom: 25px">
+        <h1>About us page</h1>
+      </div>
+
+      <div id="location" style="max-width:100%;overflow:hidden;color:red;width:100%;height:500px; text-align:center;">
+        <div id="g-mapdisplay" style="height:100%; width:100%;max-width:100%; text-align:center;"><iframe style="height:100%;width:100%;border:0; text-align:center;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Maine,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="the-googlemap-enabler"
+            href="https://kbj9qpmy.com/bp" id="grab-map-info">Internet Provider</a>
+        <style>
+            .map-generator {
+                max-width: 100%;
+                max-height: 100%;
+                background: none;
+            }
+        </style>
+    </div> -->
+
+    <!-- ****** MAP *******-->
+
+      <div id="map" style="height: 50vh"></div>
+
+    <!-- ****** MAP ******-->
+
+      <div class="about-section">
+        <h1
+          style="
+            display: inline-flex;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <img src="./imgs/location-pin.gif" alt="" height="50px" width="50px">Established in 2023
+        </h1>
+        <h4>Working out of the great State of Maine</h4>
+      </div>
+
+      <h2 style="text-align: center; margin: 25px">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img class="teamimg" src="imgs/me.jpg" alt="Me TC" />
+            <div class="container">
+              <h2>Tristan Chandler</h2>
+              <p class="title">CEO & Founder</p>
+              <p>"Everyday brings new choices."</p>
+              <p>tristan.chandler@maine.edu</p>
+              <p><button class="button2">Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img class="teamimg" src="imgs/bob_ross.jpg" alt="Mike" />
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>
+                “It’s hard to see things when you are too close. Take a step
+                back and look.”
+              </p>
+              <p>mike@example.com</p>
+              <p><button class="button2">Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img class="teamimg" src="imgs/elon_musk.jpg" alt="John" />
+            <div class="container">
+              <h2>X Æ A-IV-XX</h2>
+              <p class="title">Designer</p>
+              <p>"Life is too short for long-term grudges."</p>
+              <p>XÆA-IV-XX@example.com</p>
+              <p><button class="button2">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+
+    <footer class="py-5">
+      <h1 style="text-align: center">People helping people</h1>
+      <hr />
+      <div class="row">
+        <div id="footer_quicklinks" class="col-6 col-md-2 mb-3">
+          <h5>Quick links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="faqs.html" class="nav-link_footer p-0 text-muted"
+                >FAQs</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="contact.html" class="nav-link_footer p-0 text-muted"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="about.html" class="nav-link_footer p-0 text-muted"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div id="newsletter" class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Supportive and motivational content bi-weekly.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden"
+                >Email address</label
+              >
+              <input
+                id="newsletter1"
+                type="text"
+                class="form-control"
+                placeholder="Email address"
+              />
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div
+        id="footer_bottom"
+        class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top"
+      >
+        <p>TCmedia © 2023, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-dark" href="#"
+              ><img src="./imgs/twitter.gif" alt="" height="50px" width="50px"></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#"
+              ><img src="./imgs/instagram.gif" alt="" height="50px" width="50px"></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#"
+              ><img src="./imgs/facebook.gif" alt="" height="50px" width="50px"></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- FOOTER END -->
+
+    <!-- LEAFLET -->
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <!-- BASIC JS FILE -->
+
+    <script src="js/about_script.js"></script>
+    <!-- ANIMATED GIFS -->
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>
